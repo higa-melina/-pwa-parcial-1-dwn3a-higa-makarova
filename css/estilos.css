@@ -127,7 +127,7 @@ h1 {
     gap: 16px;
 }
 
-.heart-button {
+.star-button {
     border: none;
     background: transparent;
     font-size: 48px;
@@ -155,7 +155,7 @@ h1 {
 }
 
 .delete-button:hover,
-.heart-button:hover {
+.star-button:hover {
     transform: scale(1.08);
 }
 
@@ -164,8 +164,22 @@ h1 {
     opacity: 0.55;
 }
 
-.task-item.completed .heart-button {
+.task-item.completed .star-button {
+    color: #fdf03c; 
     font-weight: 700;
+}
+.task-form input:focus, .task-form button:focus {
+    outline: 2px solid #111;
+    box-shadow: 4px 4px 0 #111;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.task-item {
+    animation: slideIn 0.3s ease-out;
 }
 
 /* Responsive */
@@ -207,7 +221,7 @@ h1 {
         gap: 10px;
     }
 
-    .heart-button {
+    .star-button {
         font-size: 38px;
     }
 
