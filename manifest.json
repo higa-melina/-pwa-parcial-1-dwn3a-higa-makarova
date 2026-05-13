@@ -1,0 +1,12 @@
+{
+    "name": "To Do List",
+    "short_name": "To Do List",
+    "description": "Aplicación web progresiva para gestionar tareas.",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#fbfaf7",
+    "theme_color": "#fbfaf7",
+    "icons": [],
+    "categories": ["productivity", "utilities"]
+}
